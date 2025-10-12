@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="StatSpec" load_steps=3 format=3 uid="uid://c6kgw8lmm6ob3"]
+
+[ext_resource type="Script" path="res://resources/stat_spec.gd" id="1_nkope"]
+[ext_resource type="Resource" uid="uid://c1nsjju8b6iby" path="res://entities/specs/roll_specs/base_attributes_roll_spec.tres" id="2_nkmbc"]
+
+[resource]
+script = ExtResource("1_nkope")
+key = &"Constitution"
+spec = ExtResource("2_nkmbc")

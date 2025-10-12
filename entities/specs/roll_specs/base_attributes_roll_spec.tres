@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="RollSpec" load_steps=2 format=3 uid="uid://c1nsjju8b6iby"]
+
+[ext_resource type="Script" path="res://resources/roll_spec.gd" id="1_vd2nm"]
+
+[resource]
+script = ExtResource("1_vd2nm")
+value_type = 0
+mode = 1
+fixed_value = 0.0
+min_value = 0.0
+max_value = 20.0
+dice_count = 1
+dice_sides = 6
+dice_mod = 0
