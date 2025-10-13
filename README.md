@@ -90,17 +90,9 @@ language**. For Python projects, this typically means having a `requirements.txt
 
 ### Citation, Sources, and References
 
-Complete this section to include citations for assets and resources that you used for your project. For example, you could
-write this section like in the following example:
+Licenses for all assets used are included under the license folder. 
 
 ```
-UI-Pack Sci-FI: https://kenney.nl/assets/ui-pack-sci-fi
-
-Digital Audio Pack: https://kenney.nl/assets/digital-audio
-
-I created by own ASCII art using https://asciiflow.com/#/ and generative AI.
+CREATOR: All of the assets included in this package are original and handmade by Cille Rosenøorn Ablidhauge, published
+by Penzilla Design.
 ```
-
-Any assets and resources you use need to be verifiable that they are licenced for you to use. If you made your
-own assets or used generative AI, you must indicate that you did so. Include a link to any assets that you
-downloaded and used. **Leaving this section unedited will count as not having completed it.**
