@@ -3,8 +3,9 @@
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_u58dw"]
 [ext_resource type="Texture2D" uid="uid://bq2wilm2xb5n1" path="res://assets/NPC/NpcReadymade_Waiter.png" id="2_wlv4b"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mguk3"]
-size = Vector2(123, 173)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_thp28"]
+radius = 26.0
+height = 52.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y2tpe"]
 atlas = ExtResource("2_wlv4b")
@@ -318,10 +319,15 @@ animations = [{
 script = ExtResource("1_u58dw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1508.5, 1213.5)
-shape = SubResource("RectangleShape2D_mguk3")
+position = Vector2(1, 66)
+shape = SubResource("CapsuleShape2D_thp28")
+metadata/_edit_group_ = true
 
 [node name="PlayerSprite" type="AnimatedSprite2D" parent="."]
-position = Vector2(1513, 1188)
+position = Vector2(4, -21)
 sprite_frames = SubResource("SpriteFrames_sy5lu")
-animation = &"walk_lateral_cardinal"
+animation = &"walk_south_intercardinal"
+metadata/_edit_group_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.2, 1.2)
