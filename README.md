@@ -30,6 +30,25 @@ roles and benefits. I also want to add the ability to recruit other characters t
 I have included a web build for Milestone 1 so people can test out the movement controls. In future milestones, I'm planning one
 hosting this on GitHub pages, but for now this feature can be run locally on your computer.
 
+```bash
+#Clone the web branch of repository
+git clone -b web https://gitlab.com/GHC-Students-Group/csci_1302_fall25/shared/gkawi/Project_gkawi.gitlab
+
+#Alternatively, clone the entire repository and then switch branches afterwards
+git clone https://gitlab.com/GHC-Students-Group/csci_1302_fall25/shared/gkawi/Project_gkawi.gitlab
+cd Project_gkawi
+git checkout web
+
+#Confirm npm or npx is installed
+npm --version
+npx --version
+
+#Run this command in the folder that contains index.html
+npx local-web-server --https --cors.embedder-policy "require-corp" --cors.opener-policy "same-origin" --directory "."
+```
+
+You may get a prompt for installation. Just hit "y", and then CTRL-Click on the localhost URL.
+
 ---
 
 ## Milestone 2
