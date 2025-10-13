@@ -1,4 +1,4 @@
-# Project - [UPDATE TITLE HERE!]
+# Project - [Legacy of the Occult]
 
 This repository is for the semester project. For each milestone, you should update the corresponding
 section with information about your project status. 
@@ -10,15 +10,25 @@ using assets, be sure to keep the citations, sources, and resources section upda
 
 ### Current Progress
 
-Update this section to describe the current progress of your project.
+For Milestone 1, I have setup a basic grid system for an isometric game. Additionally, I have 8-directional movement controls
+for the main player character along with a camera that follows the player's movements. I have accomodated for WASD and arrow
+keys.
 
 ### Challenges
 
-Update this section to describe the challenges for your project at this stage.
+One major challenge was realizing that the coordinate system for Godot is not the same as a normal coordinate system typically
+found in most math classes. Rather than the positive y-axis pointing up, the positive y-axis points down, which had a major affect
+on the implementation of my movement controls.
 
 ### Future Directions
 
-What are your plans for the next milestone?
+Currently, I have plans to implement a building system. Each building will take a certain amount of resources and have different
+roles and benefits. I also want to add the ability to recruit other characters to help with the creation of your village.
+
+### Instructions
+
+I have included a web build for Milestone 1 so people can test out the movement controls. In future milestones, I'm planning one
+hosting this on GitHub pages, but for now this feature can be run locally on your computer.
 
 ---
 
