@@ -2,7 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://bc5jbvjs7k2pj" path="res://scenes/ground_tileset.tres" id="1_hx0ik"]
 [ext_resource type="PackedScene" uid="uid://cocgf2jgh51as" path="res://scenes/player/player.tscn" id="2_fw7em"]
-[ext_resource type="Script" path="res://scenes/grid.gd" id="2_olt6r"]
+[ext_resource type="Script" uid="uid://buq7y4lxq6alt" path="res://scenes/grid.gd" id="2_olt6r"]
 
 [node name="Village" type="Node2D"]
 
