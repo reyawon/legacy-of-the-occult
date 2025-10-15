@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Inventory" load_steps=4 format=3 uid="uid://cyy3sgsyrv0a0"]
+
+[ext_resource type="Script" uid="uid://4vwiu5rs83br" path="res://scenes/inventory/inventory_item.gd" id="1_85ppt"]
+[ext_resource type="Resource" uid="uid://cjhwmb14dbp1d" path="res://scenes/inventory/items/bronze_axe.tres" id="2_hikcw"]
+[ext_resource type="Script" uid="uid://djnqibtl2o7pr" path="res://scenes/inventory/inventory.gd" id="3_o3pyv"]
+
+[resource]
+script = ExtResource("3_o3pyv")
+items = Array[ExtResource("1_85ppt")]([null, null, ExtResource("2_hikcw"), ExtResource("2_hikcw"), null, null, null, null, null, null, null, null, null, null, null, null, null, ExtResource("2_hikcw"), ExtResource("2_hikcw"), null])
+metadata/_custom_type_script = "uid://djnqibtl2o7pr"

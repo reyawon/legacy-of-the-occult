@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=4 uid="uid://bncnv8kko0715"]
+[gd_scene load_steps=5 format=4 uid="uid://bncnv8kko0715"]
 
 [ext_resource type="TileSet" uid="uid://bc5jbvjs7k2pj" path="res://scenes/ground_tileset.tres" id="1_hx0ik"]
 [ext_resource type="PackedScene" uid="uid://cocgf2jgh51as" path="res://scenes/player/player.tscn" id="2_fw7em"]
 [ext_resource type="Script" uid="uid://buq7y4lxq6alt" path="res://scenes/grid.gd" id="2_olt6r"]
+[ext_resource type="PackedScene" uid="uid://be2qpveqhpvky" path="res://scenes/inventory/inventory_model.tscn" id="4_1oqlt"]
 
 [node name="Village" type="Node2D"]
 
@@ -22,4 +23,10 @@ tile_map_data = PackedByteArray("AAAJAAkAAQAAAAAAAAAJAAgAAQABAAAAAAAJAAcAAQABAAA
 tile_set = ExtResource("1_hx0ik")
 
 [node name="Player" parent="." instance=ExtResource("2_fw7em")]
-position = Vector2(1538, 1152)
+position = Vector2(1777, 1050)
+
+[node name="GridContainer" parent="Player" instance=ExtResource("4_1oqlt")]
+offset_left = -326.0
+offset_top = -397.0
+offset_right = 330.0
+offset_bottom = -137.0

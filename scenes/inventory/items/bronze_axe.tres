@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://cjhwmb14dbp1d"]
+
+[ext_resource type="Script" uid="uid://4vwiu5rs83br" path="res://scenes/inventory/inventory_item.gd" id="1_j2cdy"]
+[ext_resource type="Texture2D" uid="uid://cgmcvkedqq8co" path="res://assets/icons/Metal/Copper_Axe.png" id="2_3u3j0"]
+
+[resource]
+script = ExtResource("1_j2cdy")
+name = "bronze_axe"
+texture = ExtResource("2_3u3j0")
+metadata/_custom_type_script = "uid://4vwiu5rs83br"
