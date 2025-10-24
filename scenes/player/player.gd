@@ -31,7 +31,6 @@ func _physics_process(_delta: float) -> void:
 		_play_animation("idle", input)
 		move_and_slide()
 		
-	print(current_stamina)
 		
 func _can_sprint() -> bool:
 	return current_stamina > 1

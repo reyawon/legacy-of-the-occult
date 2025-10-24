@@ -1,10 +1,13 @@
-[gd_scene load_steps=98 format=3 uid="uid://cocgf2jgh51as"]
+[gd_scene load_steps=101 format=3 uid="uid://cocgf2jgh51as"]
 
 [ext_resource type="Script" uid="uid://dlcp173h56j1y" path="res://scenes/player/player.gd" id="1_u58dw"]
 [ext_resource type="Texture2D" uid="uid://rlmq5i2s0w64" path="res://assets/AnimationSheets/PremadeCharacters/Character0/Character0_Walk.png" id="2_dovo2"]
 [ext_resource type="Texture2D" uid="uid://c8cvijhou3gqg" path="res://assets/AnimationSheets/PremadeCharacters/Character0/Character0_Idle.png" id="2_gmlin"]
 [ext_resource type="Resource" uid="uid://cyy3sgsyrv0a0" path="res://scenes/inventory/player_inventory.tres" id="2_p47bc"]
 [ext_resource type="Texture2D" uid="uid://dybk6irwv2eei" path="res://assets/AnimationSheets/PremadeCharacters/Character0/Character0_Run.png" id="3_lvxji"]
+[ext_resource type="Texture2D" uid="uid://0om7ki1aaig8" path="res://assets/kenney_ui-pack-adventure/PNG/Double/panel_grey.png" id="6_0owmy"]
+[ext_resource type="PackedScene" uid="uid://be2qpveqhpvky" path="res://scenes/inventory/inventory_model.tscn" id="6_75vfm"]
+[ext_resource type="StyleBox" uid="uid://fvpvnv7e8m8j" path="res://scenes/inventory/bg_player_inventory_stylebox.tres" id="8_qek5x"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_thp28"]
 radius = 26.0
@@ -722,17 +725,23 @@ animations = [{
 script = ExtResource("1_u58dw")
 inventory = ExtResource("2_p47bc")
 
+[node name="InventoryModel" parent="." instance=ExtResource("6_75vfm")]
+offset_top = 850.0
+offset_bottom = 850.0
+inventory = ExtResource("2_p47bc")
+inventory_background_texture = ExtResource("6_0owmy")
+columns = 9
+background_theme = ExtResource("8_qek5x")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 66)
 shape = SubResource("CapsuleShape2D_thp28")
-metadata/_edit_group_ = true
 
 [node name="PlayerSprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(4, -21)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_sy5lu")
-animation = &"walk_south_intercardinal"
-metadata/_edit_group_ = true
+animation = &"idle_south_cardinal"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.2, 1.2)
