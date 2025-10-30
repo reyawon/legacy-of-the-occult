@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Tech" load_steps=2 format=3 uid="uid://ccbkov73mago4"]
+
+[ext_resource type="Script" uid="uid://d136eylvr0eqy" path="res://resources/tech_tree/tech.gd" id="1_4nulr"]
+
+[resource]
+script = ExtResource("1_4nulr")
+id = "elemental_domination"
+display_name = "Elemental Domination"
+prereqs = Array[String](["elemental_attunement"])
+metadata/_custom_type_script = "uid://d136eylvr0eqy"

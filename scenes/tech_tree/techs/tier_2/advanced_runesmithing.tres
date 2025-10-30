@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Tech" load_steps=2 format=3 uid="uid://c7e5wjmkja52p"]
+
+[ext_resource type="Script" uid="uid://d136eylvr0eqy" path="res://resources/tech_tree/tech.gd" id="1_8udnv"]
+
+[resource]
+script = ExtResource("1_8udnv")
+id = "advanced_runesmithing"
+display_name = "Advanced Runesmithing"
+prereqs = Array[String](["runic_crafting"])
+metadata/_custom_type_script = "uid://d136eylvr0eqy"

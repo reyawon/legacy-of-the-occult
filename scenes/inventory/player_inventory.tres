@@ -6,5 +6,5 @@
 
 [resource]
 script = ExtResource("3_o3pyv")
-items = Array[ExtResource("1_85ppt")]([null, null, ExtResource("2_hikcw"), ExtResource("2_hikcw"), null, null, null, null, null, ExtResource("2_hikcw"), null, null, null, null, null, null, null, ExtResource("2_hikcw"), ExtResource("2_hikcw"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
+items = Array[ExtResource("1_85ppt")]([null, null, ExtResource("2_hikcw"), ExtResource("2_hikcw"), null, null, null, null, null, ExtResource("2_hikcw"), null, null, ExtResource("2_hikcw"), null, null, null, ExtResource("2_hikcw"), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
 metadata/_custom_type_script = "uid://djnqibtl2o7pr"

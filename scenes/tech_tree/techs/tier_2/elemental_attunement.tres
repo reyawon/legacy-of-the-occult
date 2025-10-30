@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Tech" load_steps=2 format=3 uid="uid://cq4ydb8xgnaim"]
+
+[ext_resource type="Script" uid="uid://d136eylvr0eqy" path="res://resources/tech_tree/tech.gd" id="1_6vgf0"]
+
+[resource]
+script = ExtResource("1_6vgf0")
+id = "elemental_attunement"
+display_name = "Elemental Attunement"
+prereqs = Array[String](["arcane_literature"])
+metadata/_custom_type_script = "uid://d136eylvr0eqy"

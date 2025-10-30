@@ -19,9 +19,9 @@ enum Mode {FIXED, RANGE, DICE}
 @export var dice_sides	: int = 6
 @export var dice_mod: int = 0
 
-func sample(seed: int) -> float:
+func sample(seed_: int) -> float:
 	var rng = RandomNumberGenerator.new()
-	rng.seed = int(seed)
+	rng.seed = int(seed_)
 	
 	var result:= 0.0
 	match mode:

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Tech" load_steps=2 format=3 uid="uid://cgnql1opwgj7j"]
+
+[ext_resource type="Script" uid="uid://d136eylvr0eqy" path="res://resources/tech_tree/tech.gd" id="1_dhfkw"]
+
+[resource]
+script = ExtResource("1_dhfkw")
+id = "mana_channel"
+display_name = "Mana Channeling"
+description = "Discover how to harness ambient mana from ley lines."
+metadata/_custom_type_script = "uid://d136eylvr0eqy"

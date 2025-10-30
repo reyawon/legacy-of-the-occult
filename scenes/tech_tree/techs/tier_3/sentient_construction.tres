@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Tech" load_steps=2 format=3 uid="uid://duhinfr22cgwp"]
+
+[ext_resource type="Script" uid="uid://d136eylvr0eqy" path="res://resources/tech_tree/tech.gd" id="1_f5ifr"]
+
+[resource]
+script = ExtResource("1_f5ifr")
+id = "sentient_construction"
+display_name = "Sentient Construction"
+prereqs = Array[String](["advanced_runesmithing"])
+metadata/_custom_type_script = "uid://d136eylvr0eqy"

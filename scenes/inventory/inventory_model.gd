@@ -14,6 +14,7 @@ var slots: Dictionary
 var is_open = false
 
 func _ready() -> void:
+	""" Builds initial slots and assigns stylebox override."""
 	close()
 	if background_theme:
 		background_theme.resource_local_to_scene = true
@@ -22,6 +23,7 @@ func _ready() -> void:
 	_build_slots()
 	
 func _process(_delta: float) -> void:
+	"""Opens or closes inventory depending on state. Builds initial slots."""
 	if Input.is_action_just_pressed("open_inventory"):
 		if is_open:
 			close()
@@ -30,6 +32,7 @@ func _process(_delta: float) -> void:
 			
 			
 func _build_slots() -> void:
+	"""Builds each slot for inventory container."""
 	var slot_scene = preload("res://scenes/inventory/inventory_slot_ui.tscn")
 	var slot_num = 0
 	
@@ -55,6 +58,7 @@ func _on_slot_hovered(_slot_index: int, _entered: bool) -> void:
 	pass
 		
 func move_item(origin_slot: int, destination_slot: int) -> void:
+	"""Reassigns values of moved inventory items."""
 	var origin_name = "slot_%d" % origin_slot
 	var destination_name = "slot_%d" % destination_slot
 	
@@ -66,10 +70,12 @@ func move_item(origin_slot: int, destination_slot: int) -> void:
 	update_item.emit()
 	
 func open() -> void:
+	"""Opens inventory"""
 	visible = true
 	is_open = true
 	
 func close() -> void:
+	"""Closes inventory"""
 	visible = false
 	is_open = false
 	

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Tech" load_steps=2 format=3 uid="uid://du48a2qb7i2i7"]
+
+[ext_resource type="Script" uid="uid://d136eylvr0eqy" path="res://resources/tech_tree/tech.gd" id="1_a85mg"]
+
+[resource]
+script = ExtResource("1_a85mg")
+id = "arcane_literature"
+display_name = "Arcane Literature"
+metadata/_custom_type_script = "uid://d136eylvr0eqy"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Tech" load_steps=2 format=3 uid="uid://be8tu62ofkmer"]
+
+[ext_resource type="Script" uid="uid://d136eylvr0eqy" path="res://resources/tech_tree/tech.gd" id="1_7r2cn"]
+
+[resource]
+script = ExtResource("1_7r2cn")
+id = "arcane_reactors"
+display_name = "Arcane Reactors"
+prereqs = Array[String](["leyline_engineering"])
+metadata/_custom_type_script = "uid://d136eylvr0eqy"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=101 format=3 uid="uid://cocgf2jgh51as"]
+[gd_scene load_steps=106 format=3 uid="uid://cocgf2jgh51as"]
 
 [ext_resource type="Script" uid="uid://dlcp173h56j1y" path="res://scenes/player/player.gd" id="1_u58dw"]
 [ext_resource type="Texture2D" uid="uid://rlmq5i2s0w64" path="res://assets/AnimationSheets/PremadeCharacters/Character0/Character0_Walk.png" id="2_dovo2"]
@@ -8,6 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://0om7ki1aaig8" path="res://assets/kenney_ui-pack-adventure/PNG/Double/panel_grey.png" id="6_0owmy"]
 [ext_resource type="PackedScene" uid="uid://be2qpveqhpvky" path="res://scenes/inventory/inventory_model.tscn" id="6_75vfm"]
 [ext_resource type="StyleBox" uid="uid://fvpvnv7e8m8j" path="res://scenes/inventory/bg_player_inventory_stylebox.tres" id="8_qek5x"]
+[ext_resource type="Script" uid="uid://dahl38a02dujo" path="res://scenes/tech_tree/tech_tree_panel.gd" id="9_h17s1"]
+[ext_resource type="PackedScene" uid="uid://cbho1lby7u1fo" path="res://scenes/tech_tree/tech_tree_ui.tscn" id="10_h17s1"]
+[ext_resource type="FontFile" uid="uid://mepxysl4ug1b" path="res://assets/fonts/old-fantasy/Old-fantasyupper-case.ttf" id="11_je7p5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_thp28"]
 radius = 26.0
@@ -721,6 +724,29 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_je7p5"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0.25616953, 0.072720416, 0.0045639384, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_h17s1"]
+font = ExtResource("11_je7p5")
+font_size = 130
+font_color = Color(0.55609024, 0.030203754, 0.34683076, 1)
+outline_size = 10
+outline_color = Color(0, 0.10980392, 0, 1)
+
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_u58dw")
 inventory = ExtResource("2_p47bc")
@@ -745,3 +771,30 @@ animation = &"idle_south_cardinal"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.2, 1.2)
+
+[node name="TechTreePanel" type="PanelContainer" parent="."]
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = -1522.0
+offset_top = -829.0
+offset_right = 1525.0
+offset_bottom = -108.0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_je7p5")
+script = ExtResource("9_h17s1")
+
+[node name="TechTreeUI" parent="TechTreePanel" instance=ExtResource("10_h17s1")]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TechTreePanel/TechTreeUI"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -1120.0
+offset_right = 1120.0
+offset_bottom = 207.0
+grow_horizontal = 2
+text = "Technology Tree"
+label_settings = SubResource("LabelSettings_h17s1")
+horizontal_alignment = 1

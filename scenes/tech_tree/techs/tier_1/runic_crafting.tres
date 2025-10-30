@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Tech" load_steps=2 format=3 uid="uid://by6ntbyvhe6jr"]
+
+[ext_resource type="Script" uid="uid://d136eylvr0eqy" path="res://resources/tech_tree/tech.gd" id="1_flvmo"]
+
+[resource]
+script = ExtResource("1_flvmo")
+id = "runic_crafting"
+display_name = "Runic Crafting"
+metadata/_custom_type_script = "uid://d136eylvr0eqy"

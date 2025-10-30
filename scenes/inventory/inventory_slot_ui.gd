@@ -35,6 +35,7 @@ func _show() -> void:
 	icon.visible = true
 	
 func _get_drag_data(_at_position: Vector2) -> Variant:
+	"""Returns drag context and hides """
 	if item == null:
 		return null
 		
@@ -48,6 +49,7 @@ func _get_drag_data(_at_position: Vector2) -> Variant:
 	return {"src": slot_index, "item": item}
 	
 func _can_drop_data(_at_position: Vector2, data: Variant) -> bool:
+	"""Returns boolean based on if an item can be dropped at a specific slot."""
 	#Validate data
 	if typeof(data) != TYPE_DICTIONARY:
 		return false
@@ -65,10 +67,10 @@ func _can_drop_data(_at_position: Vector2, data: Variant) -> bool:
 	if occupied:
 		return false
 		
-	print('true')
 	return true
 	
 func _drop_data(_at_position: Vector2, data: Variant) -> void:
+	"""Calls parent inventory model to move item and drops data at location control node."""
 	var target_index = slot_index
 	print('dropped in slot: ', target_index)
 	
@@ -87,6 +89,7 @@ func _drop_data(_at_position: Vector2, data: Variant) -> void:
 	origin_slot.was_successfully_dropped = true
 	
 func _create_preview(tex: Texture2D, scale_factor: float) -> TextureRect:
+	"""Creates preview when player is dragging items."""
 	var preview := TextureRect.new()
 	preview.texture = tex
 	

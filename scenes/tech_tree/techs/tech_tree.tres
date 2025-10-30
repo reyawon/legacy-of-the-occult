@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="TechTree" load_steps=13 format=3 uid="uid://bwm60e486icot"]
+
+[ext_resource type="Script" uid="uid://qodtkbgotyaa" path="res://resources/tech_tree/tech_tree.gd" id="1_ulo6v"]
+[ext_resource type="Script" uid="uid://d136eylvr0eqy" path="res://resources/tech_tree/tech.gd" id="2_oe4de"]
+[ext_resource type="Resource" uid="uid://icvmpfi2i624" path="res://scenes/tech_tree/techs/tier_2/leyline_engineering.tres" id="3_h3uuv"]
+[ext_resource type="Resource" uid="uid://cgnql1opwgj7j" path="res://scenes/tech_tree/techs/tier_1/mana_channeling.tres" id="4_ytb7r"]
+[ext_resource type="Resource" uid="uid://du48a2qb7i2i7" path="res://scenes/tech_tree/techs/tier_1/arcane_literature.tres" id="5_n4sm3"]
+[ext_resource type="Resource" uid="uid://by6ntbyvhe6jr" path="res://scenes/tech_tree/techs/tier_1/runic_crafting.tres" id="6_740jy"]
+[ext_resource type="Resource" uid="uid://c7e5wjmkja52p" path="res://scenes/tech_tree/techs/tier_2/advanced_runesmithing.tres" id="7_lwpk4"]
+[ext_resource type="Resource" uid="uid://cq4ydb8xgnaim" path="res://scenes/tech_tree/techs/tier_2/elemental_attunement.tres" id="8_qas4b"]
+[ext_resource type="Resource" uid="uid://be8tu62ofkmer" path="res://scenes/tech_tree/techs/tier_3/arcane_reactors.tres" id="9_n8wx1"]
+[ext_resource type="Resource" uid="uid://ccbkov73mago4" path="res://scenes/tech_tree/techs/tier_3/elemental_domination.tres" id="10_ht133"]
+[ext_resource type="Resource" uid="uid://duhinfr22cgwp" path="res://scenes/tech_tree/techs/tier_3/sentient_construction.tres" id="11_6hk8l"]
+[ext_resource type="Resource" uid="uid://el8hbom64w4h" path="res://scenes/tech_tree/techs/tier_4/aetheric_synthesis.tres" id="12_ytb7r"]
+
+[resource]
+script = ExtResource("1_ulo6v")
+techs = Array[ExtResource("2_oe4de")]([ExtResource("4_ytb7r"), ExtResource("5_n4sm3"), ExtResource("6_740jy"), ExtResource("7_lwpk4"), ExtResource("8_qas4b"), ExtResource("3_h3uuv"), ExtResource("9_n8wx1"), ExtResource("10_ht133"), ExtResource("11_6hk8l"), ExtResource("12_ytb7r")])
+metadata/_custom_type_script = "uid://qodtkbgotyaa"

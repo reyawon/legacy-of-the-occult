@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Tech" load_steps=2 format=3 uid="uid://icvmpfi2i624"]
+
+[ext_resource type="Script" uid="uid://d136eylvr0eqy" path="res://resources/tech_tree/tech.gd" id="1_rl333"]
+
+[resource]
+script = ExtResource("1_rl333")
+id = "leyline_engineering"
+display_name = "Leyline Engineering"
+description = "City architects learn to align streets and conduits with natural mana currents, boosting flow efficiency."
+prereqs = Array[String](["mana_channel"])
+metadata/_custom_type_script = "uid://d136eylvr0eqy"

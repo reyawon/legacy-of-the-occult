@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://cmamcj4gwj160"]
+
+[ext_resource type="Script" uid="uid://rldud4s1oby1" path="res://globals/tech_tree_manager.gd" id="1_dwj24"]
+[ext_resource type="Resource" uid="uid://bwm60e486icot" path="res://scenes/tech_tree/techs/tech_tree.tres" id="2_nqpyt"]
+
+[node name="TechTreeManager" type="Node"]
+script = ExtResource("1_dwj24")
+tree = ExtResource("2_nqpyt")
