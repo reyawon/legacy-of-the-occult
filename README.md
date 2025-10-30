@@ -58,15 +58,21 @@ using assets, be sure to keep the citations, sources, and resources section upda
 
 ### Current Progress
 
-Update this section to describe the current progress of your project.
+For Milestone 2, I worked on implementing an inventory system and a technology tree. The technology tree utilizes a
+DAG data structure, or a directed acyclical graph. The inventory system is allows the player to drag items from one slot
+to another, and shows a preview of the item that they are dragging.
 
 ### Challenges
 
-Update this section to describe the challenges for your project at this stage.
+The most pressing challenge that I had was the implementation of a DFS cycle detection algorithim utilized by the technology
+tree feature. I eventually landed on a solution that utilizes two arrays (visited and visiting) and a function that is called
+recursively on each technology's prerequsiite to confirm that there are no cycles within the tree.
 
 ### Future Directions
 
-What are your plans for the final submission?
+I stil have a lot of work ahead of me, but I'm rather optimistic about being able to implement the ability to create buildings,
+(after unlocking the right technology) and gather resources. I will probably put different character on the back burner for now,
+but I will see if I still have time to implment that.
 
 ---
 
